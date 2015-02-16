@@ -20,7 +20,7 @@
 		<!-- UI (WebJar, Primefaces...) -->
 		<version.bootstrap>3.0.2</version.bootstrap>
 		<version.jquery>2.0.3-1</version.jquery>
-		<version.primefaces>4.0</version.primefaces>
+		<version.primefaces>5.1</version.primefaces>
 		<version.primefaces-themes>1.0.10</version.primefaces-themes>
 		<!-- Test -->
 		<version.junit>4.11</version.junit>
@@ -69,6 +69,11 @@
 			<groupId>org.primefaces.themes</groupId>
 			<artifactId>all-themes</artifactId>
 			<version>${version.primefaces-themes}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.primefaces.extensions</groupId>
+			<artifactId>primefaces-extensions</artifactId>
+			<version>3.0.0</version>
 		</dependency>
 		<!-- Test -->
 		<dependency>
@@ -185,7 +190,20 @@
 			</plugin>
 		</plugins>
 	</build>
-
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>org.primefaces.extensions</groupId>
+				<artifactId>primefaces-extensions</artifactId>
+				<version>3.0.0</version>
+			</dependency>
+			<dependency>
+				<groupId>org.primefaces</groupId>
+				<artifactId>primefaces</artifactId>
+				<version>5.1</version>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
 	<repositories>
 		<repository>
 			<id>prime-repo</id>

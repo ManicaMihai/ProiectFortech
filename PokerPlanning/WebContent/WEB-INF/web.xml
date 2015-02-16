@@ -13,11 +13,7 @@
     <param-name>javax.faces.PROJECT_STAGE</param-name>
     <param-value>Development</param-value>
   </context-param>
-  
-  <!-- Welcome page -->
-  <welcome-file-list>
-    <welcome-file>faces/demo.xhtml</welcome-file>
-  </welcome-file-list>
+
   
   <!-- JSF mapping -->
   <servlet>
@@ -43,5 +39,9 @@
     <servlet-name>Faces Servlet</servlet-name>
     <url-pattern>*.xhtml</url-pattern>
   </servlet-mapping>
-  
+    
+  <!-- Welcome page -->
+  <welcome-file-list>
+    <welcome-file>demo.xhtml</welcome-file>
+  </welcome-file-list>
 </web-app>
